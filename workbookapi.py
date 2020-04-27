@@ -1,7 +1,7 @@
 #Module: WorkbookAPI
 #Purpose: Helper functions for the Workbook API
 
-#API Docs: https://freewheel.workbook.net/api/metadata
+#API Docs: https://{YourInstance}.workbook.net/api/metadata
 
 import requests
 import configparser
