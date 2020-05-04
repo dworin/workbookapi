@@ -63,6 +63,18 @@ class wbSession:
         authpath = "resource/teams"
         r = self._wb_get(authpath)
         return r
+
+    def teamresources(self, resourceids):
+        authpath = "resource/team/resources"
+        payload = {"ResourceIds":resourceids}
+        r = self._wb_post(authpath, payload)
+        return r
+
+    def teamvisualization(self, resourceids):
+        authpath = 'setup/teams/visualization/setup'
+        payload = {"ResourceIds":resourceids}
+        r = self._wb_post(authpath, payload)
+        return r
     
     def departments(self):
         authpath = "core/departments"
