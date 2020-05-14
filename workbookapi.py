@@ -70,9 +70,10 @@ class wbSession:
         r = self._wb_post(authpath, payload)
         return r
 
-    def teamvisualization(self, resourceids):
+    def teamvisualization(self):
         authpath = 'setup/teams/visualization/setup'
-        payload = {"ResourceIds":resourceids}
+        #payload = {"ResourceIds":resourceids}
+        payload ={}
         r = self._wb_post(authpath, payload)
         return r
     
